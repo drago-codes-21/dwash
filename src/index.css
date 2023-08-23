@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar-dark {
+  background-color: #333; 
+}
+
+
+.navbar-dark .navbar-brand {
+  color: white; 
+  margin-right: 20px; 
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; 
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: white; 
+}
+
+.stats-flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.stats-card {
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.stats-card h3 {
+  margin-top: 5px;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.data-table {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid #ccc; 
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ccc; 
+}
