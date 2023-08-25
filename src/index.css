@@ -34,15 +34,18 @@ code {
   justify-content: space-between;
   margin: 20px;
   flex-wrap: wrap;
+  
 }
 
 .stats-card {
   flex: 1;
-  min-width: 250px;
+  height : 300px;
+  min-width: 200px;
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
   background-color: #f8f8f8;
+  background-color: #E5E4E2;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -83,4 +86,80 @@ td:not(:last-child) {
 
 tr:not(:last-child) td {
   border-bottom: 1px solid #ccc; 
+}
+
+/* CompanyCard.css */
+
+/* CompanyCard.css */
+
+.company-card {
+  width: 300px;
+  height: 200px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #F9F6EE;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.company-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-header {
+  font-size: 18px;
+  font-weight: medium;
+  color: #333; /* Grey color */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.accuracy-label {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.accuracy-value {
+  font-size: 24px;
+  font-weight: medium;
+  /* color: #007bff; 
+  color: #50C878; 
+  color: #E4D00A; 
+  color: 	#EE4B2B;  */
+}
+ 
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Table header styles */
+.table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table body styles */
+.table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Alternate row background color for better readability */
+.table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
 }

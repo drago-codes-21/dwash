@@ -1,13 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        {/* <a  href="/"> */}
+        <Link to="/" className="navbar-brand">
           Datawash
-        </a>
+        </Link>
+        {/* </a> */}
         <button
           className="navbar-toggler"
           type="button"
