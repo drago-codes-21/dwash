@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { toast } from "react-hot-toast";
 import Cards from "./Card";
 import Table from "./Dummy";
+import Logo from "../assets/BCS.png";
 
 const InfoForm = () => {
   const [check, setCheck] = useState(false);
@@ -41,7 +42,25 @@ const InfoForm = () => {
           <div className="col-lg-6">
             <div className="card">
               <div className="card-body">
-                <h3 className="card-title text-center">Welcome!!</h3>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <img
+                    src={Logo}
+                    alt="logo"
+                    style={{
+                      height: "50px",
+                      width: "50px",
+                      marginRight: "10px",
+                    }}
+                  />
+                  <h3 className="card-title text-center">Welcome </h3>
+                </div>
+
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="nameInput" className="form-label">
@@ -63,7 +82,6 @@ const InfoForm = () => {
                     Search
                   </button>
                 </form>
-                {/* <p className="mt-3">{message}</p> */}
                 {console.log(message)}
               </div>
             </div>

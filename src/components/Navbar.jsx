@@ -6,11 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        {/* <a  href="/"> */}
         <Link to="/" className="navbar-brand">
           Datawash
         </Link>
-        {/* </a> */}
         <button
           className="navbar-toggler"
           type="button"

@@ -2,16 +2,7 @@ import React, { useState } from "react";
 
 function Table() {
   // Define column and row names
-  const columns = [
-    "Experian",
-    "Company House",
-    "Equifax",
-    "Registry Trust",
-    "Thomson Local",
-    "Endole",
-    "BT OSIS",
-    "HMRC",
-  ];
+  const columns = ["Experian", "Company House", "Equifax"];
 
   const rows = [
     "Legal Name",

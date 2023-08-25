@@ -28,7 +28,6 @@ function Table() {
     "UBO",
   ];
 
-  // Generate random data for the table
   const tableData = rowNames.map(() => ({
     biwData: generateRandomString(Math.floor(Math.random() * 3) + 6),
     currentTp: generateRandomString(Math.floor(Math.random() * 3) + 6),
